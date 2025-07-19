@@ -12,14 +12,14 @@ const Home = () =>{
         <div className="text-black flex justify-around items-center bg-orange-400 rounded py-12 pr-10">
             <div className="flex flex-col items-center w-3/4 space-y-10">
                 <div className="text-5xl font-bold ">
-                    Track and Guardian your Wealth
+                    Take Control of Your Financial Future
                 </div>
                 <div className="text-xl self-center ">
-                    Hello guys this is the man that has never drank water for over 100 years
+                    Track smarter. Save faster. Live better.
                 </div>
                 <div className="flex space-x-25 ">
-                    <button className="border-black p-4 px-8 bg-blue-400 cursor-pointer text-white rounded-2xl hover:bg-white hover:text-black ">Get Secured</button>
-                    <button className="border p-4 px-8 bg-white rounded-2xl cursor-pointer hover:bg-black hover:text-white ">See Demo</button>
+                    <button className=" p-4 px-8 bg-blue-400 cursor-pointer text-white rounded-2xl hover:bg-white hover:text-black ">Get Secured</button>
+                    <button className=" p-4 px-8 bg-white rounded-2xl cursor-pointer hover:bg-black hover:text-white ">See Demo</button>
                 </div>
             </div>
             <div className="w-1/4">
@@ -48,6 +48,14 @@ const Home = () =>{
                 <img className='mb-5 self-center' src={goals} alt="" height={200} width={200}/>
                 <p className='text-2xl font-bold mb-5'>Custom Savings Goals</p>
                 <p className=''>Set personalized savings targets—whether for travel, emergencies, or future investments. Monitor your progress and celebrate every milestone.</p>
+            </div>
+        </div>
+        <div className="flex mt-20 justify-around items-center bg-green-400 h-[100px]">
+            <div className="">
+            <p className='text-3xl font-extrabold'>Savings Made Simple: Chat with Our Telegram Bot</p>
+            </div>
+            <div className="">
+                 <button className=" p-4 px-8 bg-blue-400 cursor-pointer text-white rounded-2xl hover:bg-white hover:text-black ">Open Telegram</button>
             </div>
         </div>
         </>
