@@ -4,6 +4,10 @@ import security from '../images/security.svg'
 import tips from '../images/tips.svg'
 import tracking from '../images/tracking.svg'
 import Navbar from './Navbar';
+import Footer from './Footer'
+import Tele from './tele'
+import {Link} from 'react-router-dom'
+
 const Home = () =>{
 
     return (
@@ -28,29 +32,30 @@ const Home = () =>{
         </div>
         <p className='text-center mt-20 text-3xl font-bold'>Features</p>
         <div className="mt-2 p-15 grid grid-cols-4 place-items-center  gap-15">
-            <div className=" text-center p-6 bg-gray-600 rounded-3xl h-full">
+            <div className="flex flex-col items-center text-center p-6 bg-gray-600 rounded-3xl h-full">
                 <img className='mb-5 self-center' src={tracking} alt="" height={180} width={180}/>
                 <p className='text-2xl font-bold mb-5'>Smart Expense Tracking</p>
                 <p className=''>Effortlessly record and categorize your daily expenses. Visualize your spending habits and take control of your financial wellness.</p>
             </div>
-            <div className=" text-center p-6 bg-gray-600 rounded-3xl h-full">
+            <div className="flex flex-col items-center text-center p-6 bg-gray-600 rounded-3xl h-full">
                 <img className='mb-5 self-center' src={security} alt="" height={200} width={200}/>
                 <p className='text-2xl font-bold mb-5'> Secure Data Protection</p>
                 <p className=''>Your privacy matters. Enjoy encrypted data storage, secure login, and strict confidentiality for all your financial information.</p>
             </div>
-            <div className=" text-center p-6 bg-gray-600 rounded-3xl h-full">
+            <div className="flex flex-col items-center text-center p-6 bg-gray-600 rounded-3xl h-full">
                 <img className='mb-5 self-center' src={tips} alt="" height={200} width={200}/>
                 <p className='text-2xl font-bold mb-5'>Personalized Financial Tips
 </p>
                 <p className=''>Receive actionable tips based on your unique spending patterns. Unlock smarter ways to save and grow your money with expert advice.</p>
             </div>
-            <div className=" text-center p-6 bg-gray-600 rounded-3xl h-full">
+            <div className="flex flex-col items-center text-center p-6 bg-gray-600 rounded-3xl h-full">
                 <img className='mb-5 self-center' src={goals} alt="" height={200} width={200}/>
                 <p className='text-2xl font-bold mb-5'>Custom Savings Goals</p>
                 <p className=''>Set personalized savings targets—whether for travel, emergencies, or future investments. Monitor your progress and celebrate every milestone.</p>
             </div>
         </div>
-        <div className="flex mt-20 justify-around items-center bg-green-400 h-[100px]">
+        <Tele />
+        <div className="flex mt-20  justify-around items-center bg-green-400 h-[100px]">
             <div className="">
             <p className='text-3xl font-extrabold'>Savings Made Simple: Chat with Our Telegram Bot</p>
             </div>
@@ -58,6 +63,7 @@ const Home = () =>{
                  <button className=" p-4 px-8 bg-blue-400 cursor-pointer text-white rounded-2xl hover:bg-white hover:text-black ">Open Telegram</button>
             </div>
         </div>
+        <Footer />
         </>
     )
 };

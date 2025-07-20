@@ -1,11 +1,12 @@
+import {Link} from 'react-router-dom'
 const Navbar = () => {
 
     return (
-        <div className="flex justify-between px-10 py-5 mx-10 ">
+        <div className="sticky top-0 z-50 bg-black flex justify-between px-20 py-5 ">
             <div className="text-2xl">Savings</div>
             <div className="flex space-x-10 items-center text-xl">
                 <a href="">Home</a>
-                <a href="">Signup/Login</a>
+                <a href=""><Link to="/login">Signup/Login</Link></a>
                 <a href="">Contact</a>
                 <a href="">Demo</a>
             </div>
