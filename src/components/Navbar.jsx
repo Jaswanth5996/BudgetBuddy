@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="text-2xl">Savings</div>
             <div className="flex space-x-10 items-center text-xl">
                 <a href="">Home</a>
-                <a href=""><Link to="/login">Signup/Login</Link></a>
+                <Link to="/login">Signup/Login</Link>
                 <a href="">Contact</a>
                 <a href="">Demo</a>
             </div>

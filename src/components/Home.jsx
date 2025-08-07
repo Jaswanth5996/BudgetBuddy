@@ -6,6 +6,7 @@ import tracking from '../images/tracking.svg'
 import Navbar from './Navbar';
 import Footer from './Footer'
 import Tele from './tele'
+import Form from './form'
 import {Link} from 'react-router-dom'
 
 const Home = () =>{
@@ -63,6 +64,7 @@ const Home = () =>{
                  <button className=" p-4 px-8 bg-blue-400 cursor-pointer text-white rounded-2xl hover:bg-white hover:text-black ">Open Telegram</button>
             </div>
         </div>
+        <Form />
         <Footer />
         </>
     )

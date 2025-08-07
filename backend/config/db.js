@@ -10,4 +10,4 @@ const dbserver = async() =>{
     }
 }
 
-export default dbserver
+module.exports = dbserver
