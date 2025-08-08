@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const dbserver = async() =>{
     try{
         await mongoose.connect(process.env.mongo_url);
+        console.log('connected to dbserver')
     }
     catch(err){
         console.log('error connecting to the database');
@@ -10,4 +11,4 @@ const dbserver = async() =>{
     }
 }
 
-module.exports = dbserver
+module.exports = dbserver;
