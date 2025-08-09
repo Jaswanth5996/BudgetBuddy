@@ -8,7 +8,6 @@ const register = async (req, res) => {
   const userexists = await User.findOne({ mobile: phone });
 
   if (userexists)
-    
     return res.status(400).json({ msg: 'User with this phone exists!' });
    
   const passhash = await bcrypt.hash(password, 10);
